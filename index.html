@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>yaveryvtrap</title>
+    <link rel="stylesheet" href="styles/styles.css">
+    <link rel="stylesheet" href="styles/header.css">
+    <link rel="stylesheet" href="styles/footer.css">
+    <link rel="stylesheet" href="styles/slide-show-style.css">
+</head>
+<body>
+<div class="root">
+    <div class="header">
+        <div class="logo-login-container">
+            <span class="logo">yaveryvtrap</span>
+            <button class="login-button">Log in</button>
+        </div>
+        <nav class="nav">
+            <ul class="navigation-list">
+                <li class="navigation-items"><a class="navigation-links" href="#">Контакты</a></li>
+                <li class="navigation-items"><a class="navigation-links" href="#">О нас </a></li>
+                <li class="navigation-items"><a class="navigation-links" href="#">Стать нами</a></li>
+            </ul>
+        </nav>
+    </div>
+    <div class="video-container">
+        <video class="video" autoplay="" muted loop="loop">
+            <source src="videos/1.webm" type="video/webm">
+            <source src="videos/videoplayback_Trim.webm.mp4" type="video/mp4">
+        </video>
+    </div>
+
+    <div class="our-stars-containers">
+        <div class="our-stars-slideshow-contrainer">
+            <div class="slides fade">
+                <div class="profile-info">
+                    <img class="profile-photo" src="images/morgen_photo.jpg" alt="morgenshtern-photo">
+
+                </div>
+            </div>
+            <div class="slides fade">
+                <div class="profile-info">
+                    <img class="profile-photo" src="images/kizaru_photo.jpg" alt="kizaru-photo">
+                </div>
+            </div>
+            <div class="slides fade">
+                <div class="profile-info">
+                    <img class="profile-photo " src="images/aljey_photo.jpg" alt="aljey-photo">
+                </div>
+            </div>
+            <a class="next" onclick="plusSlide(1)">&#10095</a>
+            <a class="prev" onclick="plusSlide(-1)">&#10094</a>
+        </div>
+
+    </div>
+    <div class="image-container"></div>
+    <footer>
+        <ul class="footer">
+            <li><a class="footer-links" href="#">Donate us</a></li>
+            <li><a class="footer-links" href="#">Feedback</a></li>
+            <li><a class="footer-links" href="#">Social Media</a></li>
+        </ul>
+    </footer>
+</div>
+</body>
+<script src="scripts/slide-show.js"></script>
+</html>
