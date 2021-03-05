@@ -1,0 +1,23 @@
+.footer{
+    background: #838383;
+    display: flex;
+    justify-content: space-between;
+    height: 50px;
+    align-items: center;
+
+}
+
+.footer-links{
+    margin: 30px 30px;
+    font-size: 26px;
+    color: white;
+    padding: 1px 30px;
+    border-radius: 10px;
+}
+
+.footer-links:hover {
+    animation-name: nav-links-highlight;
+    animation-duration: 0.7s;
+    animation-iteration-count: 1;
+
+}

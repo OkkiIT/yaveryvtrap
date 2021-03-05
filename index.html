@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>yaveryvtrap</title>
+    <title>trapkultrura 19</title>
     <link rel="stylesheet" href="styles/styles.css">
     <link rel="stylesheet" href="styles/header.css">
     <link rel="stylesheet" href="styles/footer.css">
@@ -12,40 +12,70 @@
 <div class="root">
     <div class="header">
         <div class="logo-login-container">
-            <span class="logo">yaveryvtrap</span>
-            <button class="login-button">Log in</button>
+            <span class="logo">TRAPKULTURA 1991</span>
+            <button class="login-button">
+                <div class="color-div"></div>
+                Log in
+            </button>
         </div>
         <nav class="nav">
             <ul class="navigation-list">
-                <li class="navigation-items"><a class="navigation-links" href="#">Контакты</a></li>
-                <li class="navigation-items"><a class="navigation-links" href="#">О нас </a></li>
-                <li class="navigation-items"><a class="navigation-links" href="#">Стать нами</a></li>
+                <div class="drop-cover">
+                    <li class="navigation-items"><a class="navigation-links" href="#">Контакты</a></li>
+                    <div class="drop-content">
+                        <div class="lol">
+                            <ul>
+                                <li>   <a class="stars-contacts">Morgenshtern</a></li>
+                                <li>  <a class="stars-contacts">Kizaru</a></li>
+                                <li>  <a class="stars-contacts">Элджей</a></li>
+                            </ul>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="drop-cover">
+                    <li class="navigation-items"><a class="navigation-links" href="#">О нас </a></li>
+                    <div class="drop-content"></div>
+                </div>
+                <div class="drop-cover">
+                    <li class="navigation-items"><a class="navigation-links" href="#">Стать нами</a></li>
+                    <div class="drop-content"></div>
+                </div>
             </ul>
         </nav>
     </div>
-    <div class="video-container">
+    <div id="video-container" class="video-container">
         <video class="video" autoplay="" muted loop="loop">
             <source src="videos/1.webm" type="video/webm">
             <source src="videos/videoplayback_Trim.webm.mp4" type="video/mp4">
         </video>
     </div>
 
-    <div class="our-stars-containers">
+    <div id="our-stars-containers" class="our-stars-containers">
         <div class="our-stars-slideshow-contrainer">
             <div class="slides fade">
                 <div class="profile-info">
                     <img class="profile-photo" src="images/morgen_photo.jpg" alt="morgenshtern-photo">
-
+                    <h1 class="profile-description">
+                        Моргенштéрн — российский рэп-исполнитель и музыкант.
+                        Ранее вёл активную видеоблогерскую деятельность на видеохостинге YouTube.
+                    </h1>
                 </div>
             </div>
             <div class="slides fade">
                 <div class="profile-info">
                     <img class="profile-photo" src="images/kizaru_photo.jpg" alt="kizaru-photo">
+                    <h1 class="profile-description">Оле́г Ви́кторович Нечипоре́нко, более известный как kizaru —
+                        российский
+                        и испанский хип-хоп-исполнитель родом из Санкт-Петербурга. В данный момент проживает в
+                        Барселоне.
+                    </h1>
                 </div>
             </div>
             <div class="slides fade">
                 <div class="profile-info">
                     <img class="profile-photo " src="images/aljey_photo.jpg" alt="aljey-photo">
+                    <h1 class="profile-description"> Элдже́й — российский хип-хоп-исполнитель.</h1>
                 </div>
             </div>
             <a class="next" onclick="plusSlide(1)">&#10095</a>
@@ -53,7 +83,6 @@
         </div>
 
     </div>
-    <div class="image-container"></div>
     <footer>
         <ul class="footer">
             <li><a class="footer-links" href="#">Donate us</a></li>
@@ -64,4 +93,5 @@
 </div>
 </body>
 <script src="scripts/slide-show.js"></script>
+<script src="scripts/fixed-video.js"></script>
 </html>

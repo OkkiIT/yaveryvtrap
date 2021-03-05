@@ -19,24 +19,30 @@
 
 .root .header .nav {
     width: 100%;
+
 }
 
 .root .header .nav .navigation-list {
     display: flex;
     justify-content: space-evenly;
+    font-size: 26px;
+    padding-bottom: 10px;
+
 }
 
 .root .header .nav .navigation-list .navigation-links {
     color: #fff;
     padding: 1px 30px;
-    border-radius: 10px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
     display: flex;
     justify-content: center;
 }
 
 .root .header .nav .navigation-list .navigation-items {
-transition: 1s ease;
+    transition: 1s ease;
 }
+
 .root .header .nav .navigation-list .navigation-items :hover {
     background: #545454;
     animation-name: nav-links-highlight;
@@ -56,22 +62,47 @@ transition: 1s ease;
 
 .root .header .logo-login-container .login-button {
     margin-left: auto;
+    text-decoration: none;
+    font-size: 15px;
+    border-radius: 10px;
+    padding: 1px 15px;
+    color: gray;
+    background: blanchedalmond;
+    box-shadow: none;
 }
 
-.root .video-container {
+
+.drop-cover{
+    display: inline-block;
+    position: relative;
+
+}
+
+.drop-content{
+    display: none;
+    position: absolute;
+    z-index: 2;
+
     width: 100%;
-    height: calc(100% - 80px);
 
-    top: 0;
+
+   }
+
+
+.drop-cover:hover .drop-content{
+    display: block;
+}
+
+.lol{
+    display: flex;
+    flex-direction: column;
+
 
 }
 
-.video {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    overflow: hidden;
-
+.stars-contacts{
+    color: goldenrod;
 }
+
 
 
